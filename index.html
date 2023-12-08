@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercise</title>
+</head>
+<body>
+
+<script>
+ var nmae = prompt("Enter Your Name");
+ var Roll = prompt("Enter Your Roll Number");
+ var Standard = prompt("Enter Your Class");
+ var math = prompt("Enter Your Maths Marks");
+ var Urdu = prompt("Enter Your Urdu Marks");
+ var Physics = prompt("Enter Your Physics Marks");
+ var Chemistry = prompt("Enter Your Chemistry Marks");
+ var English = prompt("Enter Your English Marks");
+
+ var obtainMarks= (parseInt(math) + parseInt(Urdu) +  parseInt(Physics) + parseInt(Chemistry) + parseInt(English) );
+ var percentage = obtainMarks * 100 / 500;
+
+document.write("Enter Your Name" + name + "<br/>")
+document.write("Enter Your Roll Number" + Roll + "<br/>")
+document.write("Enter Your Class" + Standard + "<br/>")
+document.write("Your Total Marks is:" + obtainMarks + "<br/>")
+document.write("Your Percentage  is:" + percentage + "<br/>")
+
+if (percentage >= 80 ){
+    document.write("Your Grade is A-1")
+    
+}
+else if (percentage >= 70){
+    document.write("your Grade is A")
+}
+else if (percentage >= 60){
+    document.write("your Grade is B")
+}
+else if (percentage >= 50){
+    document.write("your Grade is C")
+}
+else if (percentage >= 40){
+    document.write("your Grade is D")
+}
+else if (percentage >= 33){
+    document.write("your Grade is E")
+}else{
+    document.write("You Are Fail!!")
+}
+</script>
+
+</body>
+</html>
